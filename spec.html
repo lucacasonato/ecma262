@@ -19378,9 +19378,9 @@
             1. If _phase_ is ~source~, then
               1. Let _moduleSourceCompletion_ be Completion(_module_.GetModuleSource()).
               1. If _moduleSourceCompletion_ is an abrupt completion, then
-                1. Perform ! Call(_promiseCapability_.[[Reject]], *undefined*, &laquo; _moduleSourceCompletion_.[[Value]] &raquo;).
+                1. Perform ! Call(_promiseCapability_.[[Reject]], *undefined*, « _moduleSourceCompletion_.[[Value]] »).
               1. Else,
-                1. Perform ! Call(_promiseCapability_.[[Resolve]], *undefined*, &laquo; _moduleSourceCompletion_.[[Value]] &raquo;).
+                1. Perform ! Call(_promiseCapability_.[[Resolve]], *undefined*, « _moduleSourceCompletion_.[[Value]] »).
               1. Return ~unused~.
             1. Let _loadPromise_ be _module_.LoadRequestedModules().
             1. Let _rejectedClosure_ be a new Abstract Closure with parameters (_reason_) that captures _promiseCapability_ and performs the following steps when called:
