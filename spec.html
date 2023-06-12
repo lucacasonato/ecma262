@@ -19330,7 +19330,7 @@
           1. Return ? EvaluateImportCall(|AssignmentExpression|, ~evaluation~).
         </emu-alg>
 
-        <emu-grammar>ImportCall : `import` `.` `source` `(` AssignmentExpression[+In, ?Yield, ?Await] `)`</emu-grammar>
+        <emu-grammar>ImportCall : `import` `.` `source` `(` AssignmentExpression `)`</emu-grammar>
         <emu-alg>
           1. Return ? EvaluateImportCall(|AssignmentExpression|, ~source~).
         </emu-alg>
